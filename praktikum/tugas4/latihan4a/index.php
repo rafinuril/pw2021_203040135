@@ -10,7 +10,7 @@ JAM PRAKTIKUM 13:00
 $conn = mysqli_connect("localhost", "root", "");
 
 // Memilih database
-mysqli_select_db($conn, "pw_tubes_203040135");
+mysqli_select_db($conn, "tubes");
 
 // Query dari database
 $result = mysqli_query($conn, "SELECT * FROM products");

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 15, 2021 at 04:26 AM
+-- Generation Time: May 27, 2021 at 09:39 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.1
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `pw_tubes_203040135`
+-- Database: `tubes`
 --
 
 -- --------------------------------------------------------
@@ -53,6 +53,26 @@ INSERT INTO `products` (`id`, `picture`, `name`, `brand`, `description`, `catego
 (9, '9.png', 'Malta Blast', 'Osgood', 'Original Malta Blast Sandals, made adventure, travelling and protect the feet', 'Sandals', 315000),
 (10, '10.png', 'Stripy Polo', 'Prepp Studio', 'Original Stripy Polo Clothes, made of full cotton and comfortable to wear', 'Clothes', 199000);
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `username` varchar(64) NOT NULL,
+  `password` varchar(256) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `username`, `password`) VALUES
+(1, 'admin', 'admin'),
+(2, 'rafinuril', '$2y$10$LJt2wPMZtjz/0/e7DZgyOeIEb4rlM3s4gbEkKQtwq4pOEbfaVndTC');
+
 --
 -- Indexes for dumped tables
 --
@@ -64,6 +84,12 @@ ALTER TABLE `products`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -72,6 +98,12 @@ ALTER TABLE `products`
 --
 ALTER TABLE `products`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

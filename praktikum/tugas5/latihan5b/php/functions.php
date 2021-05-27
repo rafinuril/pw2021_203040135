@@ -13,7 +13,7 @@ function koneksi()
     $conn = mysqli_connect("localhost", "root", "");
 
     // Memilih database
-    mysqli_select_db($conn, "pw_tubes_203040135");
+    mysqli_select_db($conn, "tubes");
 
     return $conn;
 }
