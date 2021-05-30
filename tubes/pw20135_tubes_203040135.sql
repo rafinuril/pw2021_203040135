@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 4.9.5
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: May 27, 2021 at 12:07 PM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.1
+-- Host: localhost:3306
+-- Generation Time: May 30, 2021 at 05:27 PM
+-- Server version: 5.7.34
+-- PHP Version: 7.3.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -18,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `rafinuril`
+-- Database: `pw20135_tubes_203040135`
 --
 
 -- --------------------------------------------------------
@@ -70,8 +71,6 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `password`) VALUES
-(4, 'fresaa', '$2y$10$Y0e8.iYwxm8YQzYhztDPP.s95QiaB2VuEFfAy6IlJSoAdm5QuN/wa'),
-(5, 'bay', '$2y$10$6sovj1WZqM9DJB1mYNJ8vubN4IKGV7ZVcNEqZkNwcG8thWXtZowAC'),
 (6, 'rafinuril', '$2y$10$W2ZzOoro3LKYExTn861QYuU0hjBKYn0mj1KPBzZy.B/TxQ487duu6');
 
 --
